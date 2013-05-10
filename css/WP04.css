@@ -1,0 +1,264 @@
+﻿/* hide from ie5 mac \*/
+html {
+  
+  
+}
+#flashcontainer
+{
+    background-color: #E0D6D0;
+    width: 100%;
+    height: 100%;
+}
+/* end hide */
+body
+{
+  margin: 0; 
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ 
+  background-color: #E0D6D0;
+}
+
+body .modal {
+    /* new custom width */
+    width: 680px;
+    /* must be half of the width, minus scrollbar on the left (30px) */
+    margin-left: -340px;
+}
+
+.header
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#s4-ribbonrow
+{
+    display: none;
+}
+
+.ms-core-brandingBox {
+display:none;
+	
+}
+
+#suiteBarLeft
+{
+    background-color: #00387D;
+}
+
+.mainContent {}
+
+.mainLogo
+{
+}
+.toprow
+{
+    margin-bottom: 50px;
+}
+
+/** Panels **/
+
+.panel
+{
+    overflow: hidden;
+    margin-bottom: 25px;
+    height:180px;
+    width:350px;
+    position:relative;
+    
+}
+
+.panel .imgleft
+{
+    float: left;
+    height: 180px;
+    z-index: 10;
+    position:absolute;
+}
+.panel .panelContentAnim
+{
+    
+    display: block;
+    padding-left: 0px;
+    height: 180px;
+    width: 70%;
+    float: right;
+    right: 0px;
+    z-index: 15;
+    position:relative;
+        transition: width 1s;
+        -webkit-transition: width 1s; /* Safari */
+        transition-timing-function: ease;
+        -webkit-transition-timing-function: ease;
+   
+}
+/** Animations **/
+
+
+.panel .panelContent
+{
+    float: right;
+    display: block;
+    padding-left: 0px;
+    height: 180px;
+    width: 200px;
+    position: absolute;
+    right: 0px;
+    z-index: 11;
+    
+    
+}
+.panelImageWrapper
+{
+    float: left;
+    display: block;
+}
+.panel .panelContentAnim:hover {
+    padding-left: 0px;
+   
+    width:100%;
+    display: block;
+
+    
+}
+.panelContent h2, .panelContent h3, .panelContentAnim h2, .panelContentAnim h3
+{
+    padding: 15px 0px 0px 15px;
+    margin: 0px;
+    color: #FFFFFF;
+    line-height:1em;
+    font-size: 1.5em;
+    font-family: 'Gudea', sans-serif;
+}
+
+.panelContent h3, .panelContentAnim h3 {
+    font-size: 1.2em;
+    font-family: 'Gudea', sans-serif;
+}
+
+.panel .panelContent p, .panel .panelContentAnim p
+{
+     color: #FFFFFF;
+
+    font-family: 'Gudea', sans-serif;
+    padding: 0px 0px 0px 15px;
+}
+
+.panel .panelContent a, .panel .panelContentAnim a
+{
+    color: white;
+    text-decoration: none;
+    border-top-style: dotted;
+    border-top-width: 1px;
+    border-top-color: #FFFFFF;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #FFFFFF;
+    display: block;
+    line-height: 1.4em;
+    margin-right:15px;
+}
+.panel .panelContent a:hover,.panel .panelContentAnim a:hover {
+    color:whitesmoke;
+}
+
+.BlueGradient
+{
+    
+    background-color: #5D7A96;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to bottom, #5D7A96, #87B1DA);
+}
+.panelVideo
+{
+    background-color:#EAE9E8;
+    
+}
+.YellowGradient
+{
+    
+    background-color: #a2661f;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to bottom, #a2661f, #ffa02f);
+}
+.BurgundyGradient
+{
+    
+    background-color: #420920;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to bottom, #420920, #7a1c41);
+}
+.EggplantGradient
+{
+    
+    background-color: #56364b;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to bottom, #56364b, #9e6e8e);
+}
+.TurquoiseGradient
+{
+    
+    background-color: #3a8496;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to bottom, #3a8496, #7ccce5);
+}
+
+
+
+.modal
+{
+    width:650px;
+}
+
+.footer
+{
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/** Animations **/
+
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+ 
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+ 
+.fade-in.two {
+-webkit-animation-delay: 2s;
+-moz-animation-delay:2s;
+animation-delay: 2s;
+}
+ 
+.fade-in.three {
+-webkit-animation-delay: 2s;
+-moz-animation-delay: 2s;
+animation-delay: 2s;
+}
+
+
+ 
